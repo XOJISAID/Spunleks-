@@ -6,13 +6,13 @@ import { CheckCircle2 } from 'lucide-react';
 const About = () => {
     return (
         <section className="py-24 bg-white/80 backdrop-blur-sm relative z-10 overflow-hidden">
-             
+
             {/* Decorative background element */}
             <div className="absolute top-20 right-0 w-96 h-96 bg-sky-100 rounded-full blur-3xl opacity-30 -z-10 animate-pulse" />
 
             <div className="container mx-auto px-6">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -31,7 +31,7 @@ const About = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -42,7 +42,7 @@ const About = () => {
                             Zamonaviy <span className="text-sky-600">Ishlab Chiqarish</span> Kompleksi
                         </h2>
                         <p className="text-slate-600 mb-6 text-lg leading-relaxed">
-                            SpunLeks fabrikasi eng so'nggi texnologiyalar bilan jihozlangan bo'lib, paxtani qayta ishlashning to'liq siklini amalga oshiradi. 
+                            SpunLeks fabrikasi eng so'nggi texnologiyalar bilan jihozlangan bo'lib, paxtani qayta ishlashning to'liq siklini amalga oshiradi.
                         </p>
                         <p className="text-slate-600 mb-8 leading-relaxed">
                             Bizning sexlarimizda sanitariya-gigiyena normalariga to'liq rioya qilingan holda, yuqori sifatli toza paxta mahsulotlari tayyorlanadi.
@@ -50,12 +50,12 @@ const About = () => {
                         </p>
                         <ul className="space-y-4">
                             {[
-                                'Yillik ishlab chiqarish quvvati: 5000 tonna', 
-                                'Xalqaro ISO 9001 va Oeko-Tex sertifikatlari', 
+                                'Yillik ishlab chiqarish quvvati: 5000 tonna',
+                                'Xalqaro ISO 9001 va Oeko-Tex sertifikatlari',
                                 '100% tabiiy va ekologik toza xom-ashyo'
                             ].map((item, i) => (
-                                <motion.li 
-                                    key={i} 
+                                <motion.li
+                                    key={i}
                                     initial={{ opacity: 0, x: 20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.4 + (i * 0.1) }}
@@ -73,4 +73,4 @@ const About = () => {
             </div>
         </section>
     );
-};export default About;
+}; export default About;

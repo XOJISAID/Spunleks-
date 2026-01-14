@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 
 const Footer = () => {
     const socialLinks = [
@@ -15,7 +15,7 @@ const Footer = () => {
         <footer id="contact" className="bg-slate-900 text-white pt-20 pb-10 relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-sky-500 to-transparent opacity-50" />
-            
+
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     <motion.div
@@ -25,7 +25,7 @@ const Footer = () => {
                         className="lg:col-span-2"
                     >
                         <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
-                             <span className="text-white">Spun</span><span className="text-sky-500">Leks</span>
+                            <span className="text-white">Spun</span><span className="text-sky-500">Leks</span>
                         </h2>
                         <p className="text-slate-400 mb-8 max-w-md leading-relaxed">
                             Biz yuqori sifatli toza paxta va to&apos;qimachilik mahsulotlarini ishlab chiqarish orqali sanoatning ishonchli hamkoriga aylandik.
@@ -33,8 +33,8 @@ const Footer = () => {
                         </p>
                         <div className="flex gap-4">
                             {socialLinks.map((social, idx) => (
-                                <a 
-                                    key={idx} 
+                                <a
+                                    key={idx}
                                     href={social.href}
                                     className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all duration-300 hover:-translate-y-1"
                                 >
@@ -62,7 +62,7 @@ const Footer = () => {
                                     <span className="text-slate-200 font-medium">O&apos;zbekiston, Toshkent viloyati, Yangiyo&apos;l tumani, Sanoat zonasi 1-mavze</span>
                                 </div>
                             </div>
-                            
+
                             <div className="flex items-center gap-4 group">
                                 <div className="bg-slate-800 p-3 rounded-lg group-hover:bg-sky-600 transition-colors">
                                     <Phone className="text-sky-500 group-hover:text-white transition-colors" size={20} />

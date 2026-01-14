@@ -23,15 +23,15 @@ const Hero = () => {
     };
 
     return (
-        <section 
-            id="home" 
+        <section
+            id="home"
             className="relative h-screen flex items-center justify-center overflow-hidden bg-transparent"
             onMouseMove={handleMouseMove}
         >
             {/* Background Pattern/Image - Made semi-transparent/gradient to show particles */}
-            <motion.div 
+            <motion.div
                 className="absolute inset-0 z-0 opacity-5"
-                style={{ x: mouseX, y: mouseY, scale: 1.1 }} 
+                style={{ x: mouseX, y: mouseY, scale: 1.1 }}
             >
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1595328225678-75c1d6368c8b?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center" />
             </motion.div>
@@ -63,9 +63,9 @@ const Hero = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                    <motion.a 
-                        href="#contact" 
-                        whileHover={{ 
+                    <motion.a
+                        href="#contact"
+                        whileHover={{
                             scale: 1.05,
                             boxShadow: "0 0 25px rgba(14, 165, 233, 0.5)"
                         }}
@@ -73,7 +73,7 @@ const Hero = () => {
                         className="group inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-sky-600 text-white px-9 py-4 rounded-full text-lg font-bold hover:to-sky-700 transition-all shadow-xl hover:shadow-2xl relative overflow-hidden"
                     >
                         <span className="relative z-10 flex items-center gap-2">
-                           Biz bilan bog&apos;laning <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                            Biz bilan bog&apos;laning <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </span>
                         {/* Shine effect */}
                         <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />

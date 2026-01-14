@@ -101,9 +101,9 @@ const ParticlesBackground = () => {
                 for (let b = a; b < particles.length; b++) {
                     const distance = ((particles[a].x - particles[b].x) * (particles[a].x - particles[b].x))
                         + ((particles[a].y - particles[b].y) * (particles[a].y - particles[b].y));
-     if (distance < (canvas.width/7) * (canvas.height/7)) {
-                         opacityValue = 1 - (distance/20000);
-                         if (opacityValue > 0) {
+                    if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+                        opacityValue = 1 - (distance / 20000);
+                        if (opacityValue > 0) {
                             ctx.strokeStyle = 'rgba(14, 165, 233,' + opacityValue * 0.15 + ')'; // Fainter lines
                             ctx.lineWidth = 0.5;
                             ctx.beginPath();
@@ -139,9 +139,9 @@ const ParticlesBackground = () => {
     }, []);
 
     return (
-        <canvas 
-            ref={canvasRef} 
-            className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10" 
+        <canvas
+            ref={canvasRef}
+            className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10"
         />
     );
-};export default ParticlesBackground;
+}; export default ParticlesBackground;
