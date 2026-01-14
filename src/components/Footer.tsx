@@ -12,7 +12,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer id="contact" className="bg-slate-900 dark:bg-black text-white pt-20 pb-10 relative overflow-hidden transition-colors duration-300">
+        <footer id="contact" className="bg-slate-900 dark:bg-slate-950 text-white pt-20 pb-10 relative overflow-hidden transition-colors duration-300">
             {/* Background elements */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-sky-500 to-transparent opacity-50" />
 

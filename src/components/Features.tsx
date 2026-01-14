@@ -5,17 +5,17 @@ import { Factory, Leaf, ShieldCheck } from 'lucide-react';
 
 const benefits = [
     {
-        icon: <Leaf className="w-12 h-12 text-emerald-500" />,
+        icon: <Leaf className="w-12 h-12 text-sky-500" />,
         title: "Ekologik Toza",
         description: "Bizning mahsulotlarimiz tabiatga zarar yetkazmagan holda yetishtirilgan toza paxtadan tayyorlanadi."
     },
     {
-        icon: <ShieldCheck className="w-12 h-12 text-sky-500" />,
+        icon: <ShieldCheck className="w-12 h-12 text-sky-600" />,
         title: "Yuqori Sifat",
         description: "Zamonaviy laboratoriya tekshiruvlari va sifat nazorati har bir bosqichda amalga oshiriladi."
     },
     {
-        icon: <Factory className="w-12 h-12 text-indigo-500" />,
+        icon: <Factory className="w-12 h-12 text-blue-500" />,
         title: "Zamonaviy Texnologiya",
         description: "Ishlab chiqarish jarayonida eng so'nggi rusumdagi dastgohlar va texnologiyalardan foydalanamiz."
     }

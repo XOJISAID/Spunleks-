@@ -39,9 +39,9 @@ const SpunLeksLogo = ({ className = "w-64" }: { className?: string }) => {
                             variants={iconVariants}
                             initial="hidden"
                             animate="visible"
-                            className="text-emerald-500"
+                            className="text-sky-500 dark:text-sky-400"
                         />
-                        {/* Bottom Arrow - Greenish */}
+                        {/* Bottom Arrow - Blue */}
                         <motion.path
                             d="M80 70 C70 85 55 90 40 85 L35 95 L25 75 L45 70 L40 80 C50 82 65 78 72 70"
                             stroke="currentColor"
@@ -52,9 +52,9 @@ const SpunLeksLogo = ({ className = "w-64" }: { className?: string }) => {
                             variants={iconVariants}
                             initial="hidden"
                             animate="visible"
-                            className="text-emerald-500"
+                            className="text-sky-600 dark:text-sky-500"
                         />
-                        {/* Top Left Arrow - Greenish */}
+                        {/* Top Left Arrow - Blue */}
                         <motion.path
                             d="M20 50 C20 35 30 20 45 15 L40 5 L60 15 L40 35 L45 25 C35 28 30 38 30 50"
                             stroke="currentColor"
@@ -65,7 +65,7 @@ const SpunLeksLogo = ({ className = "w-64" }: { className?: string }) => {
                             variants={iconVariants}
                             initial="hidden"
                             animate="visible"
-                            className="text-emerald-500"
+                            className="text-sky-500 dark:text-sky-400"
                         />
                     </svg>
                 </motion.div>
