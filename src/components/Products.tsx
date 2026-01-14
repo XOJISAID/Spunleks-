@@ -10,7 +10,7 @@ const products = [
         title: "Oliy Navli Paxta",
         category: "Xom-ashyo",
         description: "Eng yuqori standartlarga javob beruvchi, toza va oq paxta tolalari. Bizning paxtamiz uzun tolali va mustahkamligi bilan ajralib turadi.",
-        image: "https://images.unsplash.com/photo-1594040291040-596e1a1b337c?q=80&w=1000&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1594040291040-596e1a1b337c?auto=format&fit=crop&w=800",
         colSpan: "md:col-span-2 lg:col-span-1"
     },
     {
@@ -18,7 +18,7 @@ const products = [
         title: "Sifatli Matolar",
         category: "Tekstil",
         description: "100% paxtadan tayyorlangan, nafas oluvchi va ekologik toza matolar. Turli xil rang va fakturalarda ishlab chiqariladi.",
-        image: "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=1000&auto=format&fit=crop", // fabric texture
+        image: "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?auto=format&fit=crop&w=800", // fabric texture
         colSpan: "md:col-span-2 lg:col-span-1"
     },
     {
@@ -26,7 +26,7 @@ const products = [
         title: "Ip Kalava",
         category: "Yarim tayyor mahsulot",
         description: "Zamonaviy yigiruv dastgohlarida tayyorlangan pishiq va tekis iplar. To'quvchilik sanoati uchun ideal tanlov.",
-        image: "https://images.unsplash.com/photo-1520106689033-0bd64971c22d?q=80&w=1000&auto=format&fit=crop", // yarn/thread
+        image: "https://images.unsplash.com/photo-1520106689033-0bd64971c22d?auto=format&fit=crop&w=800", // yarn/thread
         colSpan: "md:col-span-2 lg:col-span-2"
     }
 ];
