@@ -12,7 +12,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer id="contact" className="bg-slate-900 text-white pt-20 pb-10 relative overflow-hidden">
+        <footer id="contact" className="bg-slate-900 dark:bg-black text-white pt-20 pb-10 relative overflow-hidden transition-colors duration-300">
             {/* Background elements */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-sky-500 to-transparent opacity-50" />
 
@@ -36,7 +36,7 @@ const Footer = () => {
                                 <a
                                     key={idx}
                                     href={social.href}
-                                    className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all duration-300 hover:-translate-y-1"
+                                    className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all duration-300 hover:-translate-y-1"
                                 >
                                     {social.icon}
                                 </a>
@@ -54,7 +54,7 @@ const Footer = () => {
                         <h3 className="text-xl font-bold mb-6 text-sky-100">Bog&apos;lanish uchun</h3>
                         <div className="space-y-6">
                             <div className="flex items-start gap-4 group">
-                                <div className="bg-slate-800 p-3 rounded-lg group-hover:bg-sky-600 transition-colors">
+                                <div className="bg-slate-800 dark:bg-slate-900 p-3 rounded-lg group-hover:bg-sky-600 transition-colors">
                                     <MapPin className="text-sky-500 group-hover:text-white transition-colors" size={20} />
                                 </div>
                                 <div>
@@ -64,7 +64,7 @@ const Footer = () => {
                             </div>
 
                             <div className="flex items-center gap-4 group">
-                                <div className="bg-slate-800 p-3 rounded-lg group-hover:bg-sky-600 transition-colors">
+                                <div className="bg-slate-800 dark:bg-slate-900 p-3 rounded-lg group-hover:bg-sky-600 transition-colors">
                                     <Phone className="text-sky-500 group-hover:text-white transition-colors" size={20} />
                                 </div>
                                 <div>
@@ -74,7 +74,7 @@ const Footer = () => {
                             </div>
 
                             <div className="flex items-center gap-4 group">
-                                <div className="bg-slate-800 p-3 rounded-lg group-hover:bg-sky-600 transition-colors">
+                                <div className="bg-slate-800 dark:bg-slate-900 p-3 rounded-lg group-hover:bg-sky-600 transition-colors">
                                     <Mail className="text-sky-500 group-hover:text-white transition-colors" size={20} />
                                 </div>
                                 <div>
@@ -86,7 +86,7 @@ const Footer = () => {
                     </motion.div>
                 </div>
 
-                <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+                <div className="border-t border-slate-800 dark:border-slate-800/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
                     <p>© {new Date().getFullYear()} SpunLeks. Barcha huquqlar himoyalangan.</p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-sky-500 transition-colors">Maxfiylik siyosati</a>

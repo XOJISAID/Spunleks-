@@ -141,7 +141,9 @@ const ParticlesBackground = () => {
     return (
         <canvas
             ref={canvasRef}
-            className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10"
+            className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-40 dark:opacity-60 transition-opacity duration-300"
         />
     );
-}; export default ParticlesBackground;
+};
+
+export default ParticlesBackground;

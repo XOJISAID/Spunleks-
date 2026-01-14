@@ -43,9 +43,9 @@ const Hero = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                     style={{ x: useTransform(mouseX, (val) => val * -1), y: useTransform(mouseY, (val) => val * -1) }} // Move text opposite to bg
-                    className="text-5xl md:text-7xl font-bold text-slate-800 mb-6"
+                    className="text-5xl md:text-7xl font-bold text-slate-800 dark:text-slate-100 mb-6 tracking-tight"
                 >
-                    <span className="text-sky-600">Toza Paxta</span> Mahsulotlari
+                    <span className="text-sky-600 dark:text-sky-400 bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-sky-400 dark:from-sky-400 dark:to-cyan-300">Toza Paxta</span> Mahsulotlari
                 </motion.h1>
                 <motion.p
                     initial={{ y: 50, opacity: 0 }}
@@ -53,7 +53,7 @@ const Hero = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     style={{ x: useTransform(mouseX, (val) => val * -0.5), y: useTransform(mouseY, (val) => val * -0.5) }}
-                    className="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto"
+                    className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto"
                 >
                     Yuqori sifatli to&apos;qimachilik xom-ashyosi va qayta ishlangan paxta mahsulotlarini ishlab chiqarish bo&apos;yicha yetakchi korxona.
                 </motion.p>

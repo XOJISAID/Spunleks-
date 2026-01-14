@@ -17,7 +17,7 @@ const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => {
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-white"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-black transition-colors duration-300"
         >
             <motion.div
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -30,7 +30,7 @@ const Loader = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 0.5 }}
-                    className="text-sky-600 font-medium tracking-widest uppercase text-sm mt-4 animate-pulse"
+                    className="text-sky-600 dark:text-sky-400 font-medium tracking-widest uppercase text-sm mt-4 animate-pulse"
                 >
                     Yuklanmoqda...
                 </motion.p>

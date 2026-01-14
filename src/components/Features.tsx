@@ -23,18 +23,18 @@ const benefits = [
 
 const Features = () => {
     return (
-        <section id="about" className="py-20 bg-slate-50/80 backdrop-blur-sm relative z-10">
+        <section id="features" className="py-20 bg-slate-50/80 dark:bg-black/80 backdrop-blur-sm relative z-10 transition-colors duration-300">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl font-bold text-slate-800 mb-4"
+                        className="text-4xl font-bold text-slate-800 dark:text-slate-100 mb-4"
                     >
                         Nega Aynan SpunLeks?
                     </motion.h2>
-                    <p className="text-slate-600 max-w-2xl mx-auto">
+                    <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                         Biz mijozlarimizga eng yaxshi sifat va xizmatni taklif etamiz.
                     </p>
                 </div>
@@ -52,11 +52,11 @@ const Features = () => {
                                 scale: 1.02,
                                 boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
                             }}
-                            className="bg-slate-50 p-8 rounded-2xl shadow-sm border border-transparent hover:border-sky-100 transition-colors text-center cursor-pointer"
+                            className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:border-sky-100 dark:hover:border-sky-900 transition-colors text-center cursor-pointer"
                         >
                             <div className="flex justify-center mb-6">{item.icon}</div>
-                            <h3 className="text-2xl font-semibold mb-4 text-slate-800">{item.title}</h3>
-                            <p className="text-slate-600">{item.description}</p>
+                            <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-100">{item.title}</h3>
+                            <p className="text-slate-600 dark:text-slate-400">{item.description}</p>
                         </motion.div>
                     ))}
                 </div>

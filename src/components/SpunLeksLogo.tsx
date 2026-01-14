@@ -75,7 +75,7 @@ const SpunLeksLogo = ({ className = "w-64" }: { className?: string }) => {
                         initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.5, duration: 0.5 }}
-                        className="text-sky-500"
+                        className="text-sky-500 dark:text-sky-400"
                     >
                         Spun
                     </motion.span>
@@ -83,7 +83,7 @@ const SpunLeksLogo = ({ className = "w-64" }: { className?: string }) => {
                         initial={{ y: -50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.7, duration: 0.5 }}
-                        className="text-sky-600"
+                        className="text-sky-600 dark:text-sky-500"
                     >
                         Leks
                     </motion.span>
