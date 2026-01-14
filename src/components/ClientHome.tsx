@@ -10,6 +10,7 @@ import Header from './Header';
 import Hero from './Hero';
 import Loader from './Loader';
 import ParticlesBackground from './ParticlesBackground';
+import Products from './Products';
 
 export default function ClientHome() {
     const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ export default function ClientHome() {
                     <main>
                         <Hero />
                         <About />
+                        <Products />
                         <Features />
                     </main>
                     <Footer />
