@@ -50,12 +50,12 @@ const Features = () => {
                             whileHover={{
                                 y: -10,
                                 scale: 1.02,
-                                boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+                                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)"
                             }}
-                            className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:border-sky-100 dark:hover:border-sky-900 transition-colors text-center cursor-pointer"
+                            className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:border-sky-200 dark:hover:border-sky-800/50 transition-all text-center cursor-pointer group hover:bg-gradient-to-b hover:from-white hover:to-sky-50 dark:hover:from-slate-900 dark:hover:to-slate-800"
                         >
-                            <div className="flex justify-center mb-6">{item.icon}</div>
-                            <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-100">{item.title}</h3>
+                            <div className="flex justify-center mb-6 transform group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                            <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">{item.title}</h3>
                             <p className="text-slate-600 dark:text-slate-400">{item.description}</p>
                         </motion.div>
                     ))}

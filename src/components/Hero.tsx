@@ -30,11 +30,14 @@ const Hero = () => {
         >
             {/* Background Pattern/Image - Made semi-transparent/gradient to show particles */}
             <motion.div
-                className="absolute inset-0 z-0 opacity-5"
+                className="absolute inset-0 z-0 opacity-5 dark:opacity-20 transition-opacity duration-300"
                 style={{ x: mouseX, y: mouseY, scale: 1.1 }}
             >
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1595328225678-75c1d6368c8b?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center" />
             </motion.div>
+
+            {/* Dark Mode Glow Effect */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/20 dark:bg-sky-500/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
             <div className="container mx-auto px-6 z-10 text-center relative">
                 <motion.h1

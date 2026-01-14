@@ -33,16 +33,26 @@ const CustomCursor = () => {
     // For this demo, let's keep it simple: just an overlay cursor.
 
     return (
-        <motion.div
-            className="fixed top-0 left-0 w-8 h-8 border-2 border-sky-500 rounded-full pointer-events-none z-50 flex items-center justify-center mix-blend-difference"
-            style={{
-                x: cursorXSpring,
-                y: cursorYSpring,
-                opacity: isVisible ? 1 : 0,
-            }}
-        >
-            <div className="w-1 h-1 bg-sky-500 rounded-full" />
-        </motion.div>
+        <>
+            <style jsx global>{`
+                body {
+                    cursor: none;
+                }
+                a, button, [role="button"] {
+                    cursor: none;
+                }
+            `}</style>
+            <motion.div
+                className="fixed top-0 left-0 w-8 h-8 border border-sky-500 dark:border-sky-400 rounded-full pointer-events-none z-[60] flex items-center justify-center transition-colors duration-300"
+                style={{
+                    x: cursorXSpring,
+                    y: cursorYSpring,
+                    opacity: isVisible ? 1 : 0,
+                }}
+            >
+                <div className="w-1.5 h-1.5 bg-sky-500 dark:bg-sky-400 rounded-full shadow-[0_0_10px_rgba(14,165,233,0.8)]" />
+            </motion.div>
+        </>
     );
 };
 
